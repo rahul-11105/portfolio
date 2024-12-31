@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <div> 
         <nav className="navbar">
             <img className="logo" src="" alt="logo"/>
             <div className="desktopMenu">
@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
             <button className="desktopMenuBtn">
                 <img className="desktopMenuImg" src="" alt="#"/>
-                Contach Me
+                Contact_Me
             </button>
         </nav>
     </div>

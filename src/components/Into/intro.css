@@ -1,0 +1,99 @@
+#intro{
+    height:calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.introImg{
+    position:absolute;
+    top:2rem;
+    right:0;
+    height:70vh;
+    width:auto;
+    object-fit: cover;
+    z-index: -1;
+    /*background-image: url(../source/Img.png);*/
+    background-size: cover;
+    background-color:transparent;
+    animation:moveimg 1.7s ease-in;
+}
+.introContent{
+    height: 100vh;
+    width: 100vh;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: move 2s ease-in-out;
+
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.introName{
+    color: yellow;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    color: rgb(242, 159, 64);
+}
+.introBtn {
+    cursor:context-menu;
+}
+.btn{
+    background-color: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+@keyframes move {
+    0% {
+        transform: translate(400px,0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes moveimg {
+    0%{
+        transform: translate(0px,200px);
+    }
+
+    100%{
+        transform: translate(0px,0px);
+    }
+  }
+
+  @media screen and (max-width:750px) {
+    .introImg{
+        right: -200px;    
+    }
+    .introContent{
+        
+        padding:  2rem;
+        font-size: 3rem;
+        font-weight: 700;
+        width: 300px;
+    }
+    .introPara{
+        font-size: medium;
+        font-weight: 300;
+        color: rgb(145, 145, 83);
+    }
+  }
+  @media (min-width:100px) and (max-width:430px) {
+    .introPara{
+        color:black;
+        font-weight: 600;
+    }
+  }

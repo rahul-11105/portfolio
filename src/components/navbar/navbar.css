@@ -53,4 +53,24 @@
     align-items: center;
     justify-content:space-between;
     padding: 0 1rem;
+    cursor: pointer;
 }
+
+@media screen and (max-width:750px) {
+    .desktopMenu{
+        display: none;
+    }
+    .desktopMenuImg{
+        object-fit: cover;
+        height: 0.50rem;
+        width: 0.50rem;
+        margin: 1rem;
+    }
+    .desktopMenuBtn{
+        height: 30px;
+        width: 8rem;
+        font-size:10px;
+        padding:0 40px 0 0px;
+    }
+    
+  }
