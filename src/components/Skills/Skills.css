@@ -52,3 +52,54 @@
     font-size: 1rem;
     font-weight: 100;
 }
+
+@media screen and (max-width:506px) {
+    .skillBar {
+        flex-direction: column;
+    }
+    .skillBarImg{
+        border: 1rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:680px) {
+    .skillBarImg{
+        margin-top: 2rem;
+    }
+}
+@media (min-width:470px) and (max-width:506px) {
+    .skillBarImg{
+        margin-left: 4rem;
+    }
+}
+@media (min-width:360px) and (max-width:470px) {
+    .skillBarImg{
+        margin-left:3rem;
+    }
+}
+@media screen and (max-width:425px) {
+    .skillTitle{
+        font-size:2rem;
+        font-weight:500;
+        
+    }
+    .skillDesc{
+        font-weight: 200;
+        font-size: 0.75rem;
+    }
+    .skillBarImg{
+        margin-top:0rem;
+        height: 6rem;
+        width: 7rem;
+        
+    }
+    .skillBarTxt p{
+        font-size: 0.75rem;
+        font-weight: 200;
+    }
+    .skillBarTxt h2{
+        font-size:1.2rem;
+        font-weight: 800;
+    }
+    
+}
