@@ -50,8 +50,9 @@
     height:4rem;
     width: 4rem;
     margin: 0 0.75rem;
-  
     text-decoration: none;
     cursor: pointer;
-
+}
+#linkedin{
+    padding: 0.30rem;
 }
