@@ -1,0 +1,60 @@
+#works{
+    margin: 0 auto;
+    min-height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+.workTile {
+    font-size:3rem;
+    margin: 1rem 0;
+
+}
+.workDesc{
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 85%;
+}
+.workImgs{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100vw;
+    max-width: 60rem;
+    flex-wrap: wrap;
+}
+.workImg{
+    object-fit: cover;
+    height:20rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+.workBtn{
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin: 3rem 0;
+    cursor: pointer;
+}
+@media (min-width:495px) and (max-width:645px) {
+    .workImg{
+        height:15rem;
+    }
+}
+@media (min-width:340px) and (max-width:495px) {
+    .workImg{
+        height:10rem;
+    }
+}
+@media (min-width:100px) and (max-width:340px) {
+    .workImg{
+        height:8rem;
+    }
+}
