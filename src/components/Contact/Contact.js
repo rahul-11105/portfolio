@@ -42,7 +42,8 @@ const Contact = () => {
                 <button className='submitBtn' type='submit' value="send">submit</button>
                 <div className='logos'>
                     <img className='logo' src={instagram} alt='linkedin'/>
-                    <img className='logo' src={github} alt='linkedin'/>
+                    <a href='https://github.com/rahul-11105?tab=repositories'><img className='logo' src={github} alt='linkedin'/></a>
+                    
                     <img id='linkedin' className='logo' src={linkedin} alt='linkedin'/>
                     
                 </div>

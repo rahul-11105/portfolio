@@ -11,13 +11,13 @@ import list from "../source/list.png"
 const Navbar = () => {
   const [showMenue,setshowMenue] = useState(false);
   return (
-    <div> 
+    <div className='nav'> 
         <nav className="navbar">
             <img className="logo" src={logo} alt="logo"/>
             <div className="desktopMenu">
                 <Link className="links" activeclass="active" to='intro' spy={true} smooth={true} offset={10} duration={500}>Home</Link>
-                <Link className="links" activeclass="active" to="skills" spy={true} smooth={true} offset={0} duration={1000}>About</Link>
-                <Link className="links" activeclass="active" to="works" spy={true} smooth={true} offset={0} duration={1000}>Portfolio</Link>
+                <Link className="links" activeclass="active" to="skills" spy={true} smooth={true} offset={10} duration={1000}>About</Link>
+                <Link className="links" activeclass="active" to="works" spy={true} smooth={true} offset={10} duration={1000}>Portfolio</Link>
             </div>
             <button className="desktopMenuBtn" onClick={()=>{
               document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
@@ -37,6 +37,6 @@ const Navbar = () => {
         </nav>
     </div>
   )
-}
+} 
 
 export default Navbar;

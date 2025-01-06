@@ -36,10 +36,16 @@
 }
 .submitBtn{
     background-color: white;
+    font-size: 1rem;
     border: none;
     padding: 0.75rem 3.5rem;
     border-radius: 0.5rem;
     margin:2rem 0;
+    cursor: pointer;
+}
+.submitBtn:hover{
+    background: linear-gradient(to bottom right, yellow, rgb(255, 128, 0));
+    transform: translate(0, -3px) scale(1.02);
 }
 .logos{
     display: flex;
@@ -52,6 +58,13 @@
     margin: 0 0.75rem;
     text-decoration: none;
     cursor: pointer;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    
+}
+.logo:hover {
+    padding: 0.5rem 0;
+    border-bottom: 5px solid rgb(255, 213, 0);
 }
 #linkedin{
     padding: 0.30rem;
